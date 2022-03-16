@@ -24,7 +24,7 @@ public class Trello
 		//given : pre-condition includes like parameter,header, authorization,
 		//when : condition i am testing like resource //iwe have to provide the name //that is called resource /1/board/ and the method name
 		//then : post condition : is something like response check the response
-		Response response = given().queryParam("name", "Divyaboard")
+		Response response = given().queryParam("name", "Divboard")
 				.queryParam("key", "b39219fe7dbd1d6144c6700033e3b9a5")
 				.queryParam("token", "475d47aa08cebeb6bdef7da62aecf29ba71113f671b5752437f0ab28744f2c62")
 				.header("Content-Type", "application/json")
@@ -53,15 +53,12 @@ public class Trello
 	{
 		RestAssured.baseURI = baseurl;
 		
-		
-
-
-		Response response = given().queryParam("name", "Divyaboard")
+		Response response = given().queryParam("name", "Divboard")
 				.queryParam("key", "b39219fe7dbd1d6144c6700033e3b9a5")
 				.queryParam("token", "475d47aa08cebeb6bdef7da62aecf29ba71113f671b5752437f0ab28744f2c62")
 				.header("Content-Type", "application/json")
 		.when()
-		.get("/1/boards/3YtTVHAS")
+		.get("/1/boards/"+id)
 		
 		.then()
 		.assertThat().statusCode(200).contentType(ContentType.JSON)
@@ -77,7 +74,7 @@ public class Trello
 		RestAssured.baseURI = baseurl;
 		
 		
-	Response response =	given().queryParam("name", "Divyaboard")
+	Response response =	given().queryParam("name", "Divboard")
 			.queryParam("key", "b39219fe7dbd1d6144c6700033e3b9a5")
 			.queryParam("token", "475d47aa08cebeb6bdef7da62aecf29ba71113f671b5752437f0ab28744f2c62")
 			.header("Content-Type", "application/json")
@@ -85,7 +82,7 @@ public class Trello
 
 		
 		.when()
-		.delete("/1/boards/3YtTVHAS")
+		.delete("/1/boards/"+id)
 		
 		.then()
 		.assertThat().statusCode(200).contentType(ContentType.JSON)

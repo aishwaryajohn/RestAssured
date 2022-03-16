@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="2" passed="2" failed="0" skipped="0">
+<testng-results total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-16T15:09:59Z" name="Default suite" finished-at="2022-03-16T15:10:16Z" duration-ms="16424">
+  <suite started-at="2022-03-16T17:11:57Z" name="Suite" finished-at="2022-03-16T17:12:11Z" duration-ms="14951">
     <groups>
     </groups>
-    <test started-at="2022-03-16T15:09:59Z" name="Default test" finished-at="2022-03-16T15:10:16Z" duration-ms="16424">
+    <test started-at="2022-03-16T17:11:57Z" name="Test" finished-at="2022-03-16T17:12:11Z" duration-ms="14951">
       <class name="RestTesting.EcommerceUser">
-        <test-method signature="signup()[pri:0, instance:RestTesting.EcommerceUser@18e36d14]" started-at="2022-03-16T20:39:59Z" name="signup" finished-at="2022-03-16T20:40:10Z" duration-ms="10435" status="PASS">
+        <test-method signature="signup()[pri:0, instance:RestTesting.EcommerceUser@332729ad]" started-at="2022-03-16T22:41:57Z" name="signup" finished-at="2022-03-16T22:42:04Z" duration-ms="7728" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signup -->
-        <test-method signature="Login()[pri:1, instance:RestTesting.EcommerceUser@18e36d14]" started-at="2022-03-16T20:40:10Z" name="Login" finished-at="2022-03-16T20:40:16Z" duration-ms="5953" status="PASS">
+        <test-method signature="Login()[pri:1, instance:RestTesting.EcommerceUser@332729ad]" started-at="2022-03-16T22:42:05Z" name="Login" finished-at="2022-03-16T22:42:10Z" duration-ms="4957" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
       </class> <!-- RestTesting.EcommerceUser -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="RestTesting.Trello">
+        <test-method signature="createBoard()[pri:0, instance:RestTesting.Trello@3370f42]" started-at="2022-03-16T22:42:04Z" name="createBoard" finished-at="2022-03-16T22:42:05Z" duration-ms="920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBoard -->
+        <test-method signature="getBoard()[pri:1, instance:RestTesting.Trello@3370f42]" started-at="2022-03-16T22:42:10Z" name="getBoard" finished-at="2022-03-16T22:42:11Z" duration-ms="593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBoard -->
+        <test-method signature="DeleteBoard()[pri:2, instance:RestTesting.Trello@3370f42]" started-at="2022-03-16T22:42:11Z" name="DeleteBoard" finished-at="2022-03-16T22:42:11Z" duration-ms="725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteBoard -->
+      </class> <!-- RestTesting.Trello -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
